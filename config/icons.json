@@ -269,14 +269,5 @@
       "rotate": false,
       "mask": false
     }
-  },
-  "yandex": {
-    "yandex-browser-50x50.png": {
-      "width": 50,
-      "height": 50,
-      "transparent": true,
-      "rotate": false,
-      "mask": false
-    }
   }
 }

@@ -1,16 +1,6 @@
 {
   "android": {
     "manifest.json": {
-    	"name": "Favicons",
-    	"short_name": "Favicons",
-      "description": "Favicons",
-      "dir": "auto",
-      "lang": "en-US",
-      "display": "standalone",
-    	"orientation": "portrait",
-    	"start_url": "./?utm_source=web_app_manifest",
-      "background_color": "#FFFFFF",
-      "theme_color": "#FFFFFF",
     	"icons": [
     		{
     			"src": "android-chrome-36x36.png",
@@ -62,17 +52,10 @@
   },
   "firefox": {
     "manifest.webapp": {
-    	"version": "1.0",
-    	"name": "Favicons",
-    	"description": "Favicon generator for Node.js",
     	"icons": {
     		"60": "firefox_app_60x60.png",
     		"128": "firefox_app_128x128.png",
     		"512": "firefox_app_512x512.png"
-    	},
-    	"developer": {
-    		"name": "Favicons",
-    		"url": "http://favicons.io"
     	}
     }
   },
@@ -90,16 +73,5 @@
         ]}
       ]}
     ]
-  },
-  "yandex": {
-    "yandex-browser-manifest.json": {
-    	"version": 1,
-    	"api_version": 1,
-    	"layout": {
-    		"logo": "yandex-browser-50x50.png",
-    		"color": "#FFFFFF",
-    		"show_title": true
-    	}
-    }
   }
 }
