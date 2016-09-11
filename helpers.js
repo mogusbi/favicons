@@ -349,12 +349,6 @@ const path = require('path'),
                         Reflect.deleteProperty(request.favicon_design, 'ios');
                     }
 
-                    if (options.icons.appleStartup) {
-                        request.favicon_design.ios.startup_image.background_color = options.background;
-                    } else if (request.favicon_design.ios) {
-                        Reflect.deleteProperty(request.favicon_design.ios, 'startup_image');
-                    }
-
                     if (options.icons.coast) {
                         let coastOptions = preparePlatformOptions('coast', options.icons.coast);
                         request.favicon_design.coast.background_color = options.background;

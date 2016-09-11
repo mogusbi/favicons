@@ -13,10 +13,7 @@
 		"ios": {
 			"picture_aspect": "background_and_margin",
 			"margin": "0",
-			"background_color": "#FFFFFF",
-			"startup_image": {
-				"background_color": "#FFFFFF"
-			}
+			"background_color": "#FFFFFF"
 		},
 		"windows": {
 			"picture_aspect": "no_change",

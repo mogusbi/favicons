@@ -9,7 +9,7 @@
   },
   "scripts": {
     "test": "cd test && node test.js && gulp",
-    "prepublish": "gulp"
+    "gulp": "gulp"
   },
   "keywords": [
     "favicon",
