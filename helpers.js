@@ -189,24 +189,9 @@ const path = require('path'),
                 create: (properties, name, callback) => {
                     print('Files:create', `Creating file: ${ name }`);
                     if (name === 'manifest.json') {
-                        properties.name = options.appName;
-                        properties.short_name = options.appName;
-                        properties.description = options.appDescription;
-                        properties.dir = options.dir;
-                        properties.lang = options.lang;
-                        properties.display = options.display;
-                        properties.orientation = options.orientation;
-                        properties.start_url = options.start_url;
-                        properties.background_color = options.background;
-                        properties.theme_color = options.theme_color;
                         _.map(properties.icons, (icon) => (icon.src = relative(icon.src)));
                         properties = JSON.stringify(properties, null, 2);
                     } else if (name === 'manifest.webapp') {
-                        properties.version = options.version;
-                        properties.name = options.appName;
-                        properties.description = options.appDescription;
-                        properties.developer.name = options.developerName;
-                        properties.developer.url = options.developerURL;
                         properties.icons = _.mapObject(properties.icons, (property) => relative(property));
                         properties = JSON.stringify(properties, null, 2);
                     } else if (name === 'browserconfig.xml') {
@@ -218,12 +203,6 @@ const path = require('path'),
                             }
                         });
                         properties = jsonxml(properties, xmlconfig);
-                    } else if (name === 'yandex-browser-manifest.json') {
-                        properties.version = options.version;
-                        properties.api_version = 1;
-                        properties.layout.logo = relative(properties.layout.logo);
-                        properties.layout.color = options.background;
-                        properties = JSON.stringify(properties, null, 2);
                     } else if (/\.html$/.test(name)) {
                         properties = properties.join('\n');
                     }
@@ -377,13 +356,6 @@ const path = require('path'),
                         request.favicon_design.windows.background_color = options.background;
                     } else {
                         Reflect.deleteProperty(request.favicon_design, 'windows');
-                    }
-
-                    if (options.icons.yandex) {
-                        request.favicon_design.yandex_browser.background_color = options.background;
-                        request.favicon_design.yandex_browser.manifest.version = options.version;
-                    } else {
-                        Reflect.deleteProperty(request.favicon_design, 'yandex_browser');
                     }
 
                     return callback(null, request);
