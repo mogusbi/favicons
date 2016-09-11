@@ -1,9 +1,6 @@
 {
   "android": {
-    "link[rel='manifest'][href$='manifest.json']": "<link rel='manifest' href='manifest.json'>",
-    "meta[name='mobile-web-app-capable']": "<meta name='mobile-web-app-capable' content='yes'>",
-    "meta[name='theme-color']": "<meta name='theme-color' content='#FFFFFF'>",
-    "meta[name='application-name']": "<meta name='application-name' content='Application'>"
+    "link[rel='manifest'][href$='manifest.json']": "<link rel='manifest' href='manifest.json'>"
   },
   "appleIcon": {
     "link[rel='apple-touch-icon'][sizes='57x57'][href$='apple-touch-icon-57x57.png']": "<link rel='apple-touch-icon' sizes='57x57' href='apple-touch-icon-57x57.png'>",
@@ -14,10 +11,7 @@
     "link[rel='apple-touch-icon'][sizes='120x120'][href$='apple-touch-icon-120x120.png']": "<link rel='apple-touch-icon' sizes='120x120' href='apple-touch-icon-120x120.png'>",
     "link[rel='apple-touch-icon'][sizes='144x144'][href$='apple-touch-icon-144x144.png']": "<link rel='apple-touch-icon' sizes='144x144' href='apple-touch-icon-144x144.png'>",
     "link[rel='apple-touch-icon'][sizes='152x152'][href$='apple-touch-icon-152x152.png']": "<link rel='apple-touch-icon' sizes='152x152' href='apple-touch-icon-152x152.png'>",
-    "link[rel='apple-touch-icon'][sizes='180x180'][href$='apple-touch-icon-180x180.png']": "<link rel='apple-touch-icon' sizes='180x180' href='apple-touch-icon-180x180.png'>",
-    "meta[name='apple-mobile-web-app-capable']": "<meta name='apple-mobile-web-app-capable' content='yes'>",
-    "meta[name='apple-mobile-web-app-status-bar-style']": "<meta name='apple-mobile-web-app-status-bar-style' content='black-translucent'>",
-    "meta[name='apple-mobile-web-app-title']": "<meta name='apple-mobile-web-app-title' content='Application'>"
+    "link[rel='apple-touch-icon'][sizes='180x180'][href$='apple-touch-icon-180x180.png']": "<link rel='apple-touch-icon' sizes='180x180' href='apple-touch-icon-180x180.png'>"
   },
   "coast": {
     "link[rel='icon'][type='image/png'][sizes='228x228'][href$='coast-228x228.png']": "<link rel='icon' type='image/png' sizes='228x228' href='coast-228x228.png'>"
@@ -32,8 +26,5 @@
     "meta[name='msapplication-TileColor']": "<meta name='msapplication-TileColor' content='#FFFFFF'>",
     "meta[name='msapplication-TileImage'][content$='mstile-144x144.png']": "<meta name='msapplication-TileImage' content='mstile-144x144.png'>",
     "meta[name='msapplication-config'][content$='browserconfig.xml']": "<meta name='msapplication-config' content='browserconfig.xml'>"
-  },
-  "yandex": {
-    "link[rel='yandex-tableau-widget'][href$='yandex-browser-manifest.json']": "<link rel='yandex-tableau-widget' href='yandex-browser-manifest.json'>"
   }
 }
